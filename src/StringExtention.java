@@ -19,10 +19,10 @@ public class StringExtention {
 
     public static boolean isURL(String str)
     {
-        return str.matches("^https?:\\/\\/[^\\-](?:(?:([a-z0-9-]{1,128})" +
+        return str.matches("^https?:\\/\\/[^\\-](?:(?:([a-z0-9-]{1,})" +
                 "?[^\\-]\\.)+(?:ru|su|com|net|org|edu)|(?!0)(?:(?!0[^.]|255)[0-9]" +
                 "{1,3}\\.){3}(?!0|255)[0-9]{1,3})(?:\\/[a-z0-9.,_@%&?+=\\~/-]*)" +
                 "?(?:#[^ '\\\"&]*)?$");
     }
-    //
+    //(?=^[0-9a-zA-Z_]{8,}$)(?=[0-9a-zA-Z_]*[0-9])(?=[0-9a-zA-Z_]*[a-z])(?=[0-9a-zA-Z_]*[A-Z])[0-9a-zA-Z_]*$
 }
