@@ -24,5 +24,11 @@ public class StringExtention {
                 "{1,3}\\.){3}(?!0|255)[0-9]{1,3})(?:\\/[a-z0-9.,_@%&?+=\\~/-]*)" +
                 "?(?:#[^ '\\\"&]*)?$");
     }
-    //(?=^[0-9a-zA-Z_]{8,}$)(?=[0-9a-zA-Z_]*[0-9])(?=[0-9a-zA-Z_]*[a-z])(?=[0-9a-zA-Z_]*[A-Z])[0-9a-zA-Z_]*$
+
+    public static boolean isPassword(String str)
+    {
+        return str.matches("(?=^[0-9a-zA-Z_]{8,}$)(?=[0-9a-zA-Z_]*[0-9])" +
+                "(?=[0-9a-zA-Z_]*[a-z])(?=[0-9a-zA-Z_]*[A-Z])[0-9a-zA-Z_]*$");
+    }
+
 }
